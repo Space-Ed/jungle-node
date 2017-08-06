@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "noImplicitUseStrict": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "build"
+    },
+    "exclude": [
+        "typings/browser",
+        "typings/browser.d.ts"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "filesGlob": [
+        "src/**/*.ts"
+    ],
+    "files": [
+        "src/mounts/subprocess.ts",
+        "src/mounts/void.ts",
+        "src/mounts/httpServer.ts",
+        "src/wrappers/stdio_child.ts",
+        "src/wrappers/httpClient.ts",
+        "src/wrappers/void.ts"
+    ]
+}
