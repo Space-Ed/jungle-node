@@ -31,7 +31,7 @@ if(argv.mount === 'subprocess'){
 //seed is the initial root patch
 let seed
 if(argv.seed){
-    seed = require(path.resolve(process.cwd, argv.seed))
+    seed = require(path.resolve(process.cwd(), argv.seed))
 }else{
     seed = {
         basis:'cell'

@@ -16,6 +16,7 @@
         "suppressImplicitAnyIndexErrors": true,
         "outDir": "build"
     },
+    "types": ["node"],
     "exclude": [
         "typings/browser",
         "typings/browser.d.ts"
