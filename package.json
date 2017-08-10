@@ -1,6 +1,6 @@
 {
   "name": "jungle-node",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The Node.js mounts and platform specific domain for Jungle",
   "main": "script/boot.js",
   "scripts": {
