@@ -8,31 +8,25 @@ module.exports = {
             console.log('Cell instantiated')
         },
 
-        sections:[
-            'public:get to nucleus as public',
-            '*:* to shell as route'
+        forwards:[
+            '**:*'
         ]
     },
 
+    greeting:'hello',
+
     index:{
         get:{
-            basis:'hook:call',
-            type:'hook',
-            direction:'in',
-            inject:true,
-            hook(req){
+            basis:'contact:op',
+            resolve_in(req){
                 return `<h1>Hello World your request ${req.url}</h1>`
             }
         }
     },
 
     get:{
-        basis:'hook:call',
-        type:'hook',
-        direction:'in',
-        inject:true,
-        hook(req){
-            console.log('OMG you get me!')
+        basis:'contact:op',
+        resolve_in(req){
             return `<h1>Hello World your request ${req.url}</h1>`
         }
     }
